@@ -1,6 +1,6 @@
 function swap(str:string,i:number,j:number):string{
-    let char=str.split('');
-    [char[i],char[j]]= [char[j],char[i]];//swap
+    let char=str.split('');//splite korlam karon typscript string immutabale
+    [char[i],char[j]]= [char[j],char[i]];//swap 
     return char.join('');
 }
 function perMutation(str:string,left:number,right:number):void
